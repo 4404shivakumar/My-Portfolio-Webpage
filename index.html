@@ -1,0 +1,241 @@
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="N.Shiva Kumar">
+    <meta name="keywords" content="HTML,CSS,Javascript,Tailwindcss">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/base.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ae760dd1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]
+    dark:hidden"><img src="./pics/header-bg-color.png" alt="main-Fullbody-bg-pic" class="w-full">
+    </div>
+    <!------------nav-bar ----------------- -->
+    <nav class="w-full bg-white fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img class="h-6"
+            src="https://see.fontimg.com/api/rf5/MABmp/ODhhOGI1ZjllOGYxNDJlZWE1YTYwNDNkNjU3YTI1YjMudHRm/bXkgcG9ydGZvbGlv/ready-for-fall.png?r=fs&h=81&w=1250&fg=000000&bg=FFFFFF&tb=1&s=65"
+            alt="my-portfolio-img-logo">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-slate-200 shadow-sm bg-opacity-50">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden lg:flex items-center gap-3 
+                px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-4" viewBox="0 0 576 512">
+                    <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 
+                    160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 
+                    0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 
+                    0L320 306.7 466.7 160 384 160z" />
+                </svg>
+            </a>
+            <button class="block md:hidden ml-2" onclick="openMenu()">
+                <img class="w-6" src="./pics/menu-bar-3line.png" alt="menu-bar-3line">
+            </button>
+        </div>
+        <!------------menu bar for mobile view -->
+        <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-8 fixed right-0 top-0 bottom-0
+         w-40 z-50 h-screen gap-4 transition duration-500 bg-slate-200">
+            <div class="absolute right-5 top-6" onclick="closeMenu()">
+                <img src="./pics/cross-mark-pic.png" alt="cross-mark-pic-'X'" class="w-4 cursor-pointer dark:hidden">
+            </div>
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#project" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!------------header ----------------- -->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center">
+        <img src="./pics/Shiva_.jpg" alt="" class="rounded-full w-44">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Shiva Kumar</h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend web developer</h1>
+        <!-- <p></p> -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap
+        flex items-center gap-2 text-white">contact me
+                <img class="w-4" src="./pics/right-arrow-pic.png" alt=""></a>
+
+            <a href="./resume.pdf" download class="px-14 py-3 border rounded-full border-gray-500 bg-white
+            flex items-center gap-2">my resume
+                <img class="w-4" src="./pics/download-pic.png">
+            </a>
+        </div>
+    </div>
+
+    <!------------about me ----------------- -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-16">
+        <h2 class="text-center text-5xl">About me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img class="w-64 sm:w-80 rounded-3xl max-w-none" src="./pics/shiva_about2.jpg" alt="">
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl">I am a tech enthusiast passionate about continuous learning and mastering new
+                    technologies. I focus on best
+                    practices, consistently refining my skills to stay current in a fast-evolving field. I approach
+                    challenges
+                    strategically, breaking them down into actionable steps to deliver efficient, scalable, and
+                    high-quality
+                    solutions. My goal is to leverage my technical expertise to create innovative and impactful
+                    projects.
+                    Whether working independently or in a team, I am committed to tackling new challenges with
+                    dedication and a
+                    forward-thinking mindset,always striving to drive progress and excellence in my work.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+                hover:shadow-[4px_4px_0_#000]">
+                        <svg class="w-7 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" />
+                        </svg>
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Python, HTML, CSS, JavaScript React Js, Node
+                            Js, Sqlite</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+                hover:shadow-[4px_4px_0_#000]">
+                        <svg class="w-7 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                        </svg>
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">B.Tech in Information Technology</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+                hover:shadow-[4px_4px_0_#000]">
+                        <svg class="w-7 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
+                        </svg>
+                        <a href="#project"><h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3></a>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Build Different Projects Based on frontend
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Projects------------->
+    <div id="project" class="w-full px-[12%] py-9 scroll-mt-20">
+        <h2 class="text-center text-5xl">My Projects</h2>
+
+        <div class=" grid sm:grid-cols-1 xl:grid-cols-3 gap-6 my-10">
+            <div class="border border-gray-400 ronded-lg px-8 py-16 
+            hover:shadow-[4px_4px_0_#000] curser-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500">
+                <img class="h-44" src="./pics/netflix-homepage.jpg" alt="netflix-homepage-pic">
+                <h3 class="text-lg my-4 text-gray-700">NETFLIX</h3>
+                <p class="text-sm text-gray-600 leading-5">Created a static netflix homepage using Html and CSS</p>
+                <a class="flex items-center gap-2 text-sm mt-5" href="https://nsknetflix.ccbp.tech/"
+                    target="_blank">click to open
+                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="border border-gray-400 ronded-lg px-8 py-16 
+                hover:shadow-[4px_4px_0_#000] curser-pointer hover:bg-[#fcf4ff]
+                hover:-translate-y-1 duration-500">
+                <img class="h-44" src="./pics/foodMunchWebPage.png" alt="netflix-homepage-pic">
+                <h3 class="text-lg my-4 text-gray-700">Food Munch Webpage</h3>
+                <p class="text-sm text-gray-600 leading-5">Created a Responsive webpage using Html, CSS and Bootstrap
+                    for food related content</p>
+                <a class="flex items-center gap-2 text-sm mt-5" href="https://typingspeedgo.ccbp.tech/"
+                    target="_blank">click to open
+                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="border border-gray-400 ronded-lg px-8 py-16 
+                hover:shadow-[4px_4px_0_#000] curser-pointer hover:bg-[#fcf4ff]
+                hover:-translate-y-1 duration-500">
+                <img class="h-44" src="./pics/speedTypingTestWebPage.png" alt="netflix-homepage-pic">
+                <h3 class="text-lg my-4 text-gray-700">Food Munch Webpage</h3>
+                <p class="text-sm text-gray-600 leading-5">Created a Dyanamic wedpage using Html, CSS and JavaScript</p>
+                <a class="flex items-center gap-2 text-sm mt-5" href="https://nskfoodmunch.ccbp.tech/"
+                    target="_blank">click to open
+                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-------------------contact------------->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url(./pics/contact-bg-pic)]
+        bg-no-repeat bg-[length:90%_auto] bg-center">
+        <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+        <h2 class="text-center text-5xl">Get in touch</h2>
+
+        <form action="" class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+            </div>
+            <textarea rows="10" placeholder="Enter your Message" class="w-full p4 outline-none 
+            border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white
+                rounded-full mx-auto hover:bg-black duration-500">Submit Now
+                <img class="w-4" src="./pics/right-arrow-pic.png" alt="" srcset="">
+            </button>
+        </form>
+
+
+    </div>
+
+    <!--------footer----------->
+
+    <div class="mt-20">
+        <div class="text-center">
+            <img class="h-6 mx-auto mb-2"
+                src="https://see.fontimg.com/api/rf5/MABmp/ODhhOGI1ZjllOGYxNDJlZWE1YTYwNDNkNjU3YTI1YjMudHRm/bXkgcG9ydGZvbGlv/ready-for-fall.png?r=fs&h=81&w=1250&fg=000000&bg=FFFFFF&tb=1&s=65"
+                alt="my-portfolio-img-logo">
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                </svg>
+                4404shivakumar@gmail.com
+            </div>
+        </div>
+
+        <div class="text-center sm:flex items-center justify-center border-t border-gray-600
+        mx-[10%] mt-12 py-6">
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li> <a href="" >Instagram</a></li>
+                <li> <a href="" >Github</a></li>
+                <li> <a href="" >Linkdin</a></li>
+                <li> <a href="" >X</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
